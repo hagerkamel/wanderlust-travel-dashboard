@@ -104,7 +104,7 @@ export async function initLongWeekendsView() {
     const weekends = await fetchLongWeekends(year, selection.countryCode);
 
     if (!weekends) {
-      renderEmptyState("lw-content", {
+      ("lw-content", {
         icon: "fa-solid fa-triangle-exclamation",
         title: "Couldn't Load Long Weekends",
         subtitle: "Something went wrong while fetching data. Please try again.",
