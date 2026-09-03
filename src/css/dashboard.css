@@ -38,6 +38,30 @@
 .search-form-row .form-group.search-btn-group {
   flex: 0;
 }
+@media (max-width: 768px) {
+  .search-form-row {
+    flex-direction: column;
+    align-items: stretch;  
+    gap: 12px;
+  }
+
+  .search-form-row .form-group,
+  .search-form-row .form-group.flex-1,
+  .search-form-row .form-group.flex-2 {
+    flex: 1 1 100%;  
+    width: 100%;
+  }
+
+  .search-form-row .search-btn-group {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .btn-explore {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 .btn-explore {
   display: flex;
